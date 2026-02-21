@@ -1,14 +1,18 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Layout from "@/components/Layout";
 
-const Index = () => {
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+const Index = () => (
+  <Layout>
+    <section className="flex min-h-[60vh] items-center justify-center">
+      <div className="container text-center">
+        <h1 className="text-4xl md:text-5xl font-heading font-bold tracking-tight mb-4 text-foreground">
+          Annadaan
+        </h1>
+        <p className="text-lg text-muted-foreground max-w-md mx-auto">
+          Content under development.
+        </p>
       </div>
-    </div>
-  );
-};
+    </section>
+  </Layout>
+);
 
 export default Index;
