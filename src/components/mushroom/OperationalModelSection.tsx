@@ -9,27 +9,52 @@ const items = [
   {
     id: "substrate",
     title: "Substrate Preparation",
-    content: "Agricultural waste materials — straw, sawdust, or cotton seed hulls — are sourced, cleaned, pasteurized, and packed into cultivation bags. Each batch is documented for traceability.",
+    points: [
+      "Source straw, sawdust, or cotton seed hulls",
+      "Clean and pasteurize materials",
+      "Pack into cultivation bags",
+      "Document each batch for traceability",
+    ],
   },
   {
     id: "inoculation",
     title: "Inoculation",
-    content: "Prepared substrate bags are inoculated with mushroom spawn under controlled sterile conditions. Laminar flow hoods or still-air boxes ensure contamination-free transfer.",
+    points: [
+      "Use laminar flow hood or still-air box",
+      "Introduce spawn into prepared substrate",
+      "Maintain sterile conditions throughout",
+      "Seal bags for incubation",
+    ],
   },
   {
     id: "environment",
     title: "Environmental Control",
-    content: "Temperature, humidity, CO₂, and light levels are monitored and maintained within species-specific ranges. Simple instrumentation and routine checks form the control protocol.",
+    points: [
+      "Monitor temperature and humidity",
+      "Manage CO₂ and air exchange",
+      "Adjust light exposure per species",
+      "Log readings daily",
+    ],
   },
   {
     id: "harvest",
     title: "Harvest Protocol",
-    content: "Mushrooms are harvested at optimal maturity using clean gloves and sanitized tools. Post-harvest handling follows food-safety protocols suited for institutional distribution.",
+    points: [
+      "Harvest at optimal maturity",
+      "Use clean gloves and sanitized tools",
+      "Follow food-safety handling standards",
+      "Package for institutional delivery",
+    ],
   },
   {
     id: "reset",
     title: "Reset Cycle",
-    content: "Spent substrate is removed, surfaces sanitized, and new bags are introduced. The cycle restarts with minimal downtime, maintaining continuous operational rhythm.",
+    points: [
+      "Remove spent substrate",
+      "Sanitize surfaces and racks",
+      "Introduce new prepared bags",
+      "Restart cycle with minimal downtime",
+    ],
   },
 ];
 
@@ -38,7 +63,7 @@ export default function OperationalModelSection() {
     <div>
       <h2 className="text-2xl font-heading font-bold mb-3 text-foreground">Operational Model</h2>
       <p className="text-muted-foreground mb-8 max-w-xl leading-relaxed">
-        A repeatable five-step operational framework for consistent cultivation.
+        A repeatable five-step framework for consistent cultivation.
       </p>
 
       <Accordion type="single" collapsible className="space-y-2">
@@ -47,8 +72,15 @@ export default function OperationalModelSection() {
             <AccordionTrigger className="text-sm font-heading font-medium hover:no-underline">
               {item.title}
             </AccordionTrigger>
-            <AccordionContent className="text-xs text-muted-foreground leading-relaxed pb-4">
-              {item.content}
+            <AccordionContent className="pb-4">
+              <ul className="space-y-1.5">
+                {item.points.map((point) => (
+                  <li key={point} className="text-xs text-muted-foreground leading-relaxed flex gap-2">
+                    <span className="text-primary mt-0.5">•</span>
+                    {point}
+                  </li>
+                ))}
+              </ul>
             </AccordionContent>
           </AccordionItem>
         ))}

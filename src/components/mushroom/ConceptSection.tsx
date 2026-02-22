@@ -4,18 +4,18 @@ import { Building2, RefreshCw, Layers } from "lucide-react";
 const features = [
   {
     icon: Building2,
-    title: "Converting Unused Indoor Spaces",
-    desc: "Repurposing underutilized storage rooms, basements, and institutional areas into controlled growing environments.",
+    title: "Converting Unused Spaces",
+    desc: "Repurposing storage rooms and basements into controlled growing environments.",
   },
   {
     icon: RefreshCw,
-    title: "Structured Production Cycles",
-    desc: "Implementing repeatable, documented cultivation cycles that ensure consistent output and quality.",
+    title: "Structured Cycles",
+    desc: "Repeatable, documented cultivation cycles for consistent output.",
   },
   {
     icon: Layers,
     title: "Institutional Integration",
-    desc: "Designing systems that align with existing institutional operations, staffing, and resource flows.",
+    desc: "Systems aligned with existing operations, staffing, and resources.",
   },
 ];
 
@@ -26,8 +26,8 @@ export default function ConceptSection() {
         Controlled Indoor Mushroom Cultivation
       </h2>
       <p className="text-muted-foreground mb-10 max-w-xl leading-relaxed">
-        A structured approach to growing mushrooms indoors — converting underutilized spaces 
-        into productive, climate-controlled cultivation environments within institutional settings.
+        Converting underutilized institutional spaces into climate-controlled cultivation rooms.
+        A structured, repeatable biological process for growing nutritious food indoors.
       </p>
 
       <div className="grid gap-6 sm:grid-cols-3">
