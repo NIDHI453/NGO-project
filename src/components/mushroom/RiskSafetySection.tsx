@@ -1,20 +1,21 @@
 import { motion } from "framer-motion";
-import { ShieldCheck, Wind, Thermometer, AlertTriangle, Sparkles } from "lucide-react";
+import { ShieldCheck, Wind, Droplets, AlertTriangle, Sparkles } from "lucide-react";
 
 const items = [
-  { icon: ShieldCheck, title: "Hygiene Standards", desc: "Strict protocols for personal hygiene, tool sanitization, and workspace cleanliness at every stage." },
-  { icon: Wind, title: "Ventilation Control", desc: "Adequate air exchange to manage CO₂ levels and prevent stale-air conditions that promote contamination." },
-  { icon: Thermometer, title: "Environmental Monitoring", desc: "Continuous tracking of temperature, humidity, and air quality within cultivation rooms." },
-  { icon: AlertTriangle, title: "Contamination Isolation", desc: "Immediate removal and disposal of contaminated bags to prevent spread within the growing space." },
-  { icon: Sparkles, title: "Clean Harvest Handling", desc: "Harvest and post-harvest handling follows food-grade cleanliness standards for institutional delivery." },
+  { icon: ShieldCheck, title: "Hygiene Practices", desc: "Strict protocols for personal hygiene, tool sanitization, and workspace cleanliness." },
+  { icon: Wind, title: "Ventilation Control", desc: "Adequate air exchange to manage CO₂ and prevent stale-air conditions." },
+  { icon: Droplets, title: "Moisture Monitoring", desc: "Continuous tracking of humidity levels within cultivation rooms." },
+  { icon: AlertTriangle, title: "Contamination Isolation", desc: "Immediate removal of contaminated bags to prevent spread." },
+  { icon: Sparkles, title: "Clean Harvest Handling", desc: "Food-grade cleanliness standards from harvest through delivery." },
 ];
 
 export default function RiskSafetySection() {
   return (
     <div>
-      <h2 className="text-2xl font-heading font-bold mb-3 text-foreground">Risk & Safety Framework</h2>
+      <h2 className="text-2xl font-heading font-bold mb-3 text-foreground">Risk & Safety</h2>
       <p className="text-muted-foreground mb-8 max-w-xl leading-relaxed">
-        Institutional-grade safety practices for controlled cultivation environments.
+        Prevention-focused practices that maintain safe, institutional-grade cultivation environments.
+        Every protocol is designed to catch issues early and minimize risk.
       </p>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">

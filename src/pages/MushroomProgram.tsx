@@ -4,22 +4,16 @@ import Layout from "@/components/Layout";
 import ConceptSection from "@/components/mushroom/ConceptSection";
 import GrowthCycleSection from "@/components/mushroom/GrowthCycleSection";
 import OperationalModelSection from "@/components/mushroom/OperationalModelSection";
-import QualityControlSection from "@/components/mushroom/QualityControlSection";
-import SpaceTransformationSection from "@/components/mushroom/SpaceTransformationSection";
-import SustainabilitySection from "@/components/mushroom/SustainabilitySection";
-import MushroomTypesSection from "@/components/mushroom/MushroomTypesSection";
-import DailyRoutineSection from "@/components/mushroom/DailyRoutineSection";
+import SpaceTypesSection from "@/components/mushroom/SpaceTypesSection";
+import SustainabilityRoutineSection from "@/components/mushroom/SustainabilityRoutineSection";
 import RiskSafetySection from "@/components/mushroom/RiskSafetySection";
 
 const sections = [
   { id: "concept", label: "Concept" },
   { id: "growth-cycle", label: "Growth Cycle" },
   { id: "operational-model", label: "Operational Model" },
-  { id: "quality-control", label: "Quality Control" },
-  { id: "space-transformation", label: "Space Transformation" },
-  { id: "sustainability", label: "Sustainability" },
-  { id: "mushroom-types", label: "Mushroom Types" },
-  { id: "daily-routine", label: "Daily Routine" },
+  { id: "space-types", label: "Space & Types" },
+  { id: "sustainability-routine", label: "Sustainability & Routine" },
   { id: "risk-safety", label: "Risk & Safety" },
 ];
 
@@ -27,11 +21,8 @@ const sectionComponents: Record<string, React.FC> = {
   "concept": ConceptSection,
   "growth-cycle": GrowthCycleSection,
   "operational-model": OperationalModelSection,
-  "quality-control": QualityControlSection,
-  "space-transformation": SpaceTransformationSection,
-  "sustainability": SustainabilitySection,
-  "mushroom-types": MushroomTypesSection,
-  "daily-routine": DailyRoutineSection,
+  "space-types": SpaceTypesSection,
+  "sustainability-routine": SustainabilityRoutineSection,
   "risk-safety": RiskSafetySection,
 };
 
@@ -53,10 +44,8 @@ const MushroomProgram = () => {
         </div>
 
         <div className="container flex flex-col lg:flex-row gap-8 lg:gap-16">
-          {/* Vertical Navigation */}
           <nav className="lg:sticky lg:top-24 lg:self-start shrink-0 lg:w-56">
             <div className="relative flex lg:flex-col gap-1 overflow-x-auto lg:overflow-visible pb-2 lg:pb-0">
-              {/* Progress line (desktop) */}
               <div className="hidden lg:block absolute left-0 top-0 bottom-0 w-px bg-border">
                 <motion.div
                   className="w-full bg-primary"
@@ -84,7 +73,6 @@ const MushroomProgram = () => {
             </div>
           </nav>
 
-          {/* Content Panel */}
           <div className="flex-1 min-w-0">
             <AnimatePresence mode="wait">
               <motion.div
