@@ -2,11 +2,11 @@ import { motion } from "framer-motion";
 import { ShieldCheck, Wind, Droplets, AlertTriangle, Sparkles } from "lucide-react";
 
 const items = [
-  { icon: ShieldCheck, title: "Hygiene Practices", desc: "Strict protocols for personal hygiene, tool sanitization, and workspace cleanliness." },
-  { icon: Wind, title: "Ventilation Control", desc: "Adequate air exchange to manage CO₂ and prevent stale-air conditions." },
-  { icon: Droplets, title: "Moisture Monitoring", desc: "Continuous tracking of humidity levels within cultivation rooms." },
-  { icon: AlertTriangle, title: "Contamination Isolation", desc: "Immediate removal of contaminated bags to prevent spread." },
-  { icon: Sparkles, title: "Clean Harvest Handling", desc: "Food-grade cleanliness standards from harvest through delivery." },
+  { icon: ShieldCheck, title: "Hygiene Practices", desc: "Sanitized tools, clean workspaces, strict personal protocols." },
+  { icon: Wind, title: "Ventilation Control", desc: "Managed air exchange to regulate CO₂ levels." },
+  { icon: Droplets, title: "Moisture Monitoring", desc: "Continuous humidity tracking in grow rooms." },
+  { icon: AlertTriangle, title: "Contamination Isolation", desc: "Immediate removal of affected bags." },
+  { icon: Sparkles, title: "Clean Harvest Handling", desc: "Food-grade standards from harvest to delivery." },
 ];
 
 export default function RiskSafetySection() {
@@ -14,8 +14,7 @@ export default function RiskSafetySection() {
     <div>
       <h2 className="text-2xl font-heading font-bold mb-3 text-foreground">Risk & Safety</h2>
       <p className="text-muted-foreground mb-8 max-w-xl leading-relaxed">
-        Prevention-focused practices that maintain safe, institutional-grade cultivation environments.
-        Every protocol is designed to catch issues early and minimize risk.
+        Prevention-focused protocols designed to catch issues early.
       </p>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">

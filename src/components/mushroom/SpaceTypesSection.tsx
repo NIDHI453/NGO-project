@@ -29,8 +29,7 @@ export default function SpaceTypesSection() {
       {/* Space Transformation */}
       <h2 className="text-2xl font-heading font-bold mb-3 text-foreground">Space & Types</h2>
       <p className="text-muted-foreground mb-6 max-w-xl leading-relaxed">
-        Unused storage rooms become organized, rack-based grow rooms.
-        Minimal infrastructure converts idle space into productive cultivation areas.
+        Idle storage rooms converted into rack-based grow rooms with minimal infrastructure.
       </p>
 
       <motion.div
@@ -67,7 +66,7 @@ export default function SpaceTypesSection() {
             className="bg-card border rounded-lg overflow-hidden hover:shadow-md transition-shadow duration-300 group"
           >
             <div className="aspect-[3/2] overflow-hidden">
-              <img src={t.image} alt={t.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+              <img src={t.image} alt={t.name} className="w-full h-full object-cover saturate-[0.85] group-hover:scale-105 transition-transform duration-500" loading="lazy" />
             </div>
             <div className="p-5">
               <h4 className="font-heading font-bold text-base mb-1">{t.name}</h4>

@@ -20,7 +20,7 @@ export default function SustainabilityRoutineSection() {
     <div>
       <h2 className="text-2xl font-heading font-bold mb-3 text-foreground">Sustainability & Routine</h2>
       <p className="text-muted-foreground mb-8 max-w-xl leading-relaxed">
-        Circular resource flow and structured daily operations.
+        Circular flow from waste to food, with structured daily operations.
       </p>
 
       {/* Flow diagram */}
