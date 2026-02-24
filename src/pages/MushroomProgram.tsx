@@ -7,6 +7,7 @@ import OperationalModelSection from "@/components/mushroom/OperationalModelSecti
 import SpaceTypesSection from "@/components/mushroom/SpaceTypesSection";
 import SustainabilityRoutineSection from "@/components/mushroom/SustainabilityRoutineSection";
 import RiskSafetySection from "@/components/mushroom/RiskSafetySection";
+import FeatureHighlightGrid from "@/components/mushroom/FeatureHighlightGrid";
 import growRoomImg from "@/assets/space-after.jpg";
 
 const sections = [
@@ -66,6 +67,12 @@ const MushroomProgram = () => {
           </motion.h1>
         </div>
       </motion.div>
+      {/* Feature Highlight Grid */}
+      <section className="py-12 md:py-16">
+        <div className="container">
+          <FeatureHighlightGrid />
+        </div>
+      </section>
 
       <section className="py-12 md:py-20">
 
