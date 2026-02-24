@@ -61,6 +61,7 @@ export default {
           light: "hsl(var(--charcoal-light))",
         },
         "soft-grey": "hsl(var(--soft-grey))",
+        "sage": "hsl(var(--sage-bg))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
