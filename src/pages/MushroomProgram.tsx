@@ -7,6 +7,7 @@ import OperationalModelSection from "@/components/mushroom/OperationalModelSecti
 import SpaceTypesSection from "@/components/mushroom/SpaceTypesSection";
 import SustainabilityRoutineSection from "@/components/mushroom/SustainabilityRoutineSection";
 import RiskSafetySection from "@/components/mushroom/RiskSafetySection";
+import growRoomImg from "@/assets/space-after.jpg";
 
 const sections = [
   { id: "concept", label: "Concept" },
@@ -33,15 +34,40 @@ const MushroomProgram = () => {
 
   return (
     <Layout>
-      <section className="py-12 md:py-20">
-        <div className="container mb-12">
-          <p className="text-xs tracking-[0.2em] uppercase text-primary mb-4 font-medium">
+      {/* Hero */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="relative h-[340px] md:h-[420px] overflow-hidden"
+      >
+        <img
+          src={growRoomImg}
+          alt="Indoor mushroom grow room with organized racks"
+          className="absolute inset-0 w-full h-full object-cover saturate-[0.85]"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-foreground/60 via-foreground/40 to-background" />
+        <div className="relative container h-full flex flex-col justify-end pb-12">
+          <motion.p
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.5 }}
+            className="text-xs tracking-[0.2em] uppercase text-primary-foreground/80 mb-3 font-medium"
+          >
             Mushroom Program
-          </p>
-          <h1 className="text-2xl md:text-3xl font-heading font-bold tracking-tight text-foreground">
-            Controlled Indoor Mushroom Cultivation
-          </h1>
+          </motion.p>
+          <motion.h1
+            initial={{ opacity: 0, y: 14 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.45, duration: 0.5 }}
+            className="text-3xl md:text-4xl font-heading font-bold tracking-tight text-primary-foreground"
+          >
+            Controlled Indoor Cultivation
+          </motion.h1>
         </div>
+      </motion.div>
+
+      <section className="py-12 md:py-20">
 
         <div className="container flex flex-col lg:flex-row gap-8 lg:gap-16">
           <nav className="lg:sticky lg:top-24 lg:self-start shrink-0 lg:w-56">

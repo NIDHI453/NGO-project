@@ -5,17 +5,17 @@ const features = [
   {
     icon: Building2,
     title: "Converting Unused Spaces",
-    desc: "Repurposing storage rooms and basements into controlled growing environments.",
+    desc: "Repurposing idle rooms into productive grow spaces.",
   },
   {
     icon: RefreshCw,
     title: "Structured Cycles",
-    desc: "Repeatable, documented cultivation cycles for consistent output.",
+    desc: "Documented cycles for consistent, repeatable output.",
   },
   {
     icon: Layers,
     title: "Institutional Integration",
-    desc: "Systems aligned with existing operations, staffing, and resources.",
+    desc: "Aligned with existing operations and staffing.",
   },
 ];
 
@@ -26,8 +26,7 @@ export default function ConceptSection() {
         Controlled Indoor Mushroom Cultivation
       </h2>
       <p className="text-muted-foreground mb-10 max-w-xl leading-relaxed">
-        Converting underutilized institutional spaces into climate-controlled cultivation rooms.
-        A structured, repeatable biological process for growing nutritious food indoors.
+        A structured biological process for growing nutritious food indoors — converting idle institutional spaces into climate-controlled cultivation rooms.
       </p>
 
       <div className="grid gap-6 sm:grid-cols-3">
