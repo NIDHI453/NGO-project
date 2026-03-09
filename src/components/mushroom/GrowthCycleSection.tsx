@@ -22,7 +22,7 @@ export default function GrowthCycleSection() {
   const progress = ((active + 1) / stages.length) * 100;
 
   return (
-    <div>
+    <div className="bg-charcoal rounded-xl p-8 md:p-10 -mx-4 md:-mx-6">
       <h2 className="text-2xl font-heading font-bold mb-3 text-foreground">Growth Cycle</h2>
       <p className="text-muted-foreground mb-8 max-w-xl leading-relaxed">
         Five controlled stages from substrate to harvest.
