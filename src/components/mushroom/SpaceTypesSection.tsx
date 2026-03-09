@@ -63,7 +63,7 @@ export default function SpaceTypesSection() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: i * 0.1, duration: 0.4 }}
-            className="bg-card border rounded-lg overflow-hidden hover:shadow-md transition-shadow duration-300 group"
+            className="bg-card border rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 group"
           >
             <div className="aspect-[3/2] overflow-hidden">
               <img src={t.image} alt={t.name} className="w-full h-full object-cover saturate-[0.85] group-hover:scale-105 transition-transform duration-500" loading="lazy" />
