@@ -30,7 +30,7 @@ export default function GrowthCycleSection() {
 
       {/* Progress bar */}
       <div className="mb-6">
-        <Progress value={progress} className="h-1.5 bg-muted" />
+        <Progress value={progress} className="h-1.5 bg-white/10" />
       </div>
 
       {/* Step indicators */}
