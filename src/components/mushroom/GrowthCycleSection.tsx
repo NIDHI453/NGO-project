@@ -41,10 +41,10 @@ export default function GrowthCycleSection() {
             onClick={() => setActive(i)}
             className={`flex-1 py-2.5 px-1 rounded-md text-xs font-heading font-medium transition-all duration-300 border ${
               i === active
-                ? "bg-primary/10 border-primary text-primary shadow-sm"
+                ? "bg-primary/20 border-primary text-primary shadow-sm"
                 : i < active
-                ? "bg-muted/50 border-border text-muted-foreground"
-                : "bg-card border-border text-muted-foreground hover:border-primary/40"
+                ? "bg-white/5 border-white/10 text-white/50"
+                : "bg-white/5 border-white/10 text-white/40 hover:border-primary/40"
             }`}
           >
             <span className="block text-[10px] opacity-60 mb-0.5">Step {i + 1}</span>
