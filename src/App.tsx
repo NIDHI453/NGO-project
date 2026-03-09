@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import About from "./pages/About";
 import Programs from "./pages/Programs";
 import MushroomProgram from "./pages/MushroomProgram";
+import HydroponicProgram from "./pages/HydroponicProgram";
 import Impact from "./pages/Impact";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/programs" element={<Programs />} />
           <Route path="/programs/mushroom" element={<MushroomProgram />} />
+          <Route path="/programs/hydroponic" element={<HydroponicProgram />} />
           <Route path="/impact" element={<Impact />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
