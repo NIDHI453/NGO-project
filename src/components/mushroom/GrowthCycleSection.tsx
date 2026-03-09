@@ -96,7 +96,7 @@ export default function GrowthCycleSection() {
         <button
           onClick={() => setActive(Math.min(stages.length - 1, active + 1))}
           disabled={active === stages.length - 1}
-          className="flex items-center gap-1.5 text-sm font-medium text-primary hover:text-primary/80 disabled:opacity-30 transition-colors"
+          className="flex items-center gap-1.5 text-sm font-medium text-primary hover:text-olive-light disabled:opacity-30 transition-colors"
         >
           Next Step <ChevronRight className="w-4 h-4" />
         </button>

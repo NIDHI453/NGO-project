@@ -73,9 +73,9 @@ const MushroomProgram = () => {
         </div>
       </motion.div>
 
-      <section className="py-12 md:py-20">
+      <section className="py-16 md:py-24">
 
-        <div className="container flex flex-col lg:flex-row gap-8 lg:gap-16">
+        <div className="container flex flex-col lg:flex-row gap-10 lg:gap-20">
           <nav className="lg:sticky lg:top-24 lg:self-start shrink-0 lg:w-56">
             <div className="relative flex lg:flex-col gap-1 overflow-x-auto lg:overflow-visible pb-2 lg:pb-0">
               <div className="hidden lg:block absolute left-0 top-0 bottom-0 w-px bg-border">
