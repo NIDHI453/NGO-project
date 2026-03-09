@@ -18,13 +18,13 @@ const sections = [
   { id: "risk-safety", label: "Risk & Safety" },
 ];
 
-const sectionComponents: Record<string, React.FC> = {
-  "concept": ConceptSection,
-  "growth-cycle": GrowthCycleSection,
-  "operational-model": OperationalModelSection,
-  "space-types": SpaceTypesSection,
-  "sustainability-routine": SustainabilityRoutineSection,
-  "risk-safety": RiskSafetySection,
+const sectionMeta: Record<string, { component: React.FC; bg?: string }> = {
+  "concept": { component: ConceptSection },
+  "growth-cycle": { component: GrowthCycleSection },
+  "operational-model": { component: OperationalModelSection, bg: "bg-sage/40" },
+  "space-types": { component: SpaceTypesSection },
+  "sustainability-routine": { component: SustainabilityRoutineSection, bg: "bg-muted/30" },
+  "risk-safety": { component: RiskSafetySection },
 };
 
 const MushroomProgram = () => {
