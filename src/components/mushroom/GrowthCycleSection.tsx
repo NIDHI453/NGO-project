@@ -78,7 +78,7 @@ export default function GrowthCycleSection() {
             </div>
           </div>
           <div className="p-6">
-            <p className="text-sm text-muted-foreground leading-relaxed mb-2">{stage.caption}</p>
+            <p className="text-sm text-white/70 leading-relaxed mb-2">{stage.caption}</p>
             <p className="text-xs font-medium text-primary italic">{stage.takeaway}</p>
           </div>
         </motion.div>
