@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import About from "./pages/About";
 import Programs from "./pages/Programs";
 import MushroomProgram from "./pages/MushroomProgram";
+import HydroponicProgram from "./pages/HydroponicProgram";
 import Impact from "./pages/Impact";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
