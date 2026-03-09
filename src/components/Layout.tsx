@@ -16,7 +16,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <header className="sticky top-0 z-50 bg-card/80 backdrop-blur-md border-b">
+      <header className="sticky top-0 z-50 bg-background/75 backdrop-blur-xl border-b shadow-sm shadow-border/30">
         <nav className="container flex items-center justify-between h-16">
           <Link to="/" className="font-heading text-xl font-bold tracking-tight text-foreground">
             Annadaan
