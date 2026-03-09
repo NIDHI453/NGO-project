@@ -30,7 +30,7 @@ const sectionMeta: Record<string, { component: React.FC; bg?: string }> = {
 const MushroomProgram = () => {
   const [activeSection, setActiveSection] = useState("concept");
   const activeIndex = sections.findIndex((s) => s.id === activeSection);
-  const ActiveComponent = sectionComponents[activeSection];
+  const { component: ActiveComponent, bg: sectionBg } = sectionMeta[activeSection];
 
   return (
     <Layout>
