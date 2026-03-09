@@ -61,7 +61,7 @@ export default function GrowthCycleSection() {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}
           transition={{ duration: 0.4, ease: "easeOut" }}
-          className="bg-card border rounded-lg overflow-hidden"
+          className="bg-white/5 border border-white/10 rounded-lg overflow-hidden"
         >
           <div className="aspect-video relative overflow-hidden">
             <motion.img
