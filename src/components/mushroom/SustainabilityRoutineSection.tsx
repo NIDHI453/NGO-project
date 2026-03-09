@@ -33,7 +33,7 @@ export default function SustainabilityRoutineSection() {
             transition={{ delay: i * 0.15, duration: 0.4 }}
             className="flex items-center gap-2 md:gap-0"
           >
-            <div className="bg-card border rounded-lg px-5 py-4 text-center min-w-[130px]">
+            <div className="bg-card border rounded-lg px-5 py-4 text-center min-w-[130px] shadow-sm">
               <span className="text-sm font-heading font-semibold text-foreground">{step}</span>
             </div>
             {i < flow.length - 1 && (

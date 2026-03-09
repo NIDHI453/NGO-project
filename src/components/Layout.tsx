@@ -16,7 +16,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <header className="sticky top-0 z-50 bg-card/80 backdrop-blur-md border-b">
+      <header className="sticky top-0 z-50 bg-background/75 backdrop-blur-xl border-b shadow-sm shadow-border/30">
         <nav className="container flex items-center justify-between h-16">
           <Link to="/" className="font-heading text-xl font-bold tracking-tight text-foreground">
             Annadaan
@@ -28,10 +28,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <li key={item.path}>
                 <Link
                   to={item.path}
-                  className={`text-sm tracking-wide transition-colors hover:text-primary ${
+                  className={`relative text-sm tracking-wide transition-colors duration-300 hover:text-primary after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:bg-primary after:transition-all after:duration-300 ${
                     location.pathname === item.path || location.pathname.startsWith(item.path + "/")
-                      ? "text-primary font-medium"
-                      : "text-muted-foreground"
+                      ? "text-primary font-medium after:w-full"
+                      : "text-muted-foreground after:w-0 hover:after:w-full"
                   }`}
                 >
                   {item.label}

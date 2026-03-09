@@ -36,7 +36,7 @@ export default function ConceptSection() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: i * 0.12, duration: 0.4 }}
-            className="bg-card rounded-lg p-6 border"
+            className="bg-card rounded-lg p-6 border shadow-sm hover:shadow-md transition-shadow duration-300"
           >
             <f.icon className="w-5 h-5 text-primary mb-4" />
             <h3 className="font-heading font-semibold text-sm mb-2">{f.title}</h3>

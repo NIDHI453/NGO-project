@@ -22,15 +22,15 @@ export default function GrowthCycleSection() {
   const progress = ((active + 1) / stages.length) * 100;
 
   return (
-    <div>
-      <h2 className="text-2xl font-heading font-bold mb-3 text-foreground">Growth Cycle</h2>
-      <p className="text-muted-foreground mb-8 max-w-xl leading-relaxed">
+    <div className="bg-charcoal rounded-xl p-8 md:p-10 -mx-4 md:-mx-6">
+      <h2 className="text-2xl font-heading font-bold mb-3 text-white">Growth Cycle</h2>
+      <p className="text-charcoal-light mb-8 max-w-xl leading-relaxed">
         Five controlled stages from substrate to harvest.
       </p>
 
       {/* Progress bar */}
       <div className="mb-6">
-        <Progress value={progress} className="h-1.5 bg-muted" />
+        <Progress value={progress} className="h-1.5 bg-white/10" />
       </div>
 
       {/* Step indicators */}
@@ -41,10 +41,10 @@ export default function GrowthCycleSection() {
             onClick={() => setActive(i)}
             className={`flex-1 py-2.5 px-1 rounded-md text-xs font-heading font-medium transition-all duration-300 border ${
               i === active
-                ? "bg-primary/10 border-primary text-primary shadow-sm"
+                ? "bg-primary/20 border-primary text-primary shadow-sm"
                 : i < active
-                ? "bg-muted/50 border-border text-muted-foreground"
-                : "bg-card border-border text-muted-foreground hover:border-primary/40"
+                ? "bg-white/5 border-white/10 text-white/50"
+                : "bg-white/5 border-white/10 text-white/40 hover:border-primary/40"
             }`}
           >
             <span className="block text-[10px] opacity-60 mb-0.5">Step {i + 1}</span>
@@ -61,7 +61,7 @@ export default function GrowthCycleSection() {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}
           transition={{ duration: 0.4, ease: "easeOut" }}
-          className="bg-card border rounded-lg overflow-hidden"
+          className="bg-white/5 border border-white/10 rounded-lg overflow-hidden"
         >
           <div className="aspect-video relative overflow-hidden">
             <motion.img
@@ -78,7 +78,7 @@ export default function GrowthCycleSection() {
             </div>
           </div>
           <div className="p-6">
-            <p className="text-sm text-muted-foreground leading-relaxed mb-2">{stage.caption}</p>
+            <p className="text-sm text-white/70 leading-relaxed mb-2">{stage.caption}</p>
             <p className="text-xs font-medium text-primary italic">{stage.takeaway}</p>
           </div>
         </motion.div>
@@ -89,14 +89,14 @@ export default function GrowthCycleSection() {
         <button
           onClick={() => setActive(Math.max(0, active - 1))}
           disabled={active === 0}
-          className="flex items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-foreground disabled:opacity-30 transition-colors"
+          className="flex items-center gap-1.5 text-sm font-medium text-white/50 hover:text-white disabled:opacity-30 transition-colors"
         >
           <ChevronLeft className="w-4 h-4" /> Previous
         </button>
         <button
           onClick={() => setActive(Math.min(stages.length - 1, active + 1))}
           disabled={active === stages.length - 1}
-          className="flex items-center gap-1.5 text-sm font-medium text-primary hover:text-primary/80 disabled:opacity-30 transition-colors"
+          className="flex items-center gap-1.5 text-sm font-medium text-primary hover:text-olive-light disabled:opacity-30 transition-colors"
         >
           Next Step <ChevronRight className="w-4 h-4" />
         </button>

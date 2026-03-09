@@ -24,7 +24,7 @@ export default function RiskSafetySection() {
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: i * 0.08, duration: 0.35 }}
-            className="bg-card border rounded-lg p-5"
+            className="bg-card border rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow duration-300"
           >
             <item.icon className="w-5 h-5 text-primary mb-3" />
             <h3 className="font-heading font-semibold text-sm mb-1">{item.title}</h3>

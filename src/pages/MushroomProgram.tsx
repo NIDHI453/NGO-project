@@ -18,19 +18,19 @@ const sections = [
   { id: "risk-safety", label: "Risk & Safety" },
 ];
 
-const sectionComponents: Record<string, React.FC> = {
-  "concept": ConceptSection,
-  "growth-cycle": GrowthCycleSection,
-  "operational-model": OperationalModelSection,
-  "space-types": SpaceTypesSection,
-  "sustainability-routine": SustainabilityRoutineSection,
-  "risk-safety": RiskSafetySection,
+const sectionMeta: Record<string, { component: React.FC; bg?: string }> = {
+  "concept": { component: ConceptSection },
+  "growth-cycle": { component: GrowthCycleSection },
+  "operational-model": { component: OperationalModelSection, bg: "bg-sage/40" },
+  "space-types": { component: SpaceTypesSection },
+  "sustainability-routine": { component: SustainabilityRoutineSection, bg: "bg-muted/30" },
+  "risk-safety": { component: RiskSafetySection },
 };
 
 const MushroomProgram = () => {
   const [activeSection, setActiveSection] = useState("concept");
   const activeIndex = sections.findIndex((s) => s.id === activeSection);
-  const ActiveComponent = sectionComponents[activeSection];
+  const { component: ActiveComponent, bg: sectionBg } = sectionMeta[activeSection];
 
   return (
     <Layout>
@@ -46,13 +46,13 @@ const MushroomProgram = () => {
           alt="Indoor mushroom grow room with organized racks"
           className="absolute inset-0 w-full h-full object-cover saturate-[0.85]"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-foreground/60 via-foreground/40 to-background" />
-        <div className="relative container h-full flex flex-col justify-end pb-12">
+        <div className="absolute inset-0 bg-gradient-to-t from-[hsl(0,0%,7%,0.75)] via-[hsl(0,0%,7%,0.35)] to-transparent" />
+        <div className="relative container h-full flex flex-col justify-end pb-14">
           <motion.p
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.5 }}
-            className="text-xs tracking-[0.2em] uppercase text-primary-foreground/80 mb-3 font-medium"
+            className="text-xs tracking-[0.25em] uppercase text-white/70 mb-3 font-medium"
           >
             Mushroom Program
           </motion.p>
@@ -60,16 +60,22 @@ const MushroomProgram = () => {
             initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.45, duration: 0.5 }}
-            className="text-3xl md:text-4xl font-heading font-bold tracking-tight text-primary-foreground"
+            className="text-3xl md:text-5xl font-heading font-bold tracking-tight text-white"
           >
             Controlled Indoor Cultivation
           </motion.h1>
+          <motion.div
+            initial={{ scaleX: 0 }}
+            animate={{ scaleX: 1 }}
+            transition={{ delay: 0.7, duration: 0.5, ease: "easeOut" }}
+            className="mt-4 h-[3px] w-16 bg-primary origin-left rounded-full"
+          />
         </div>
       </motion.div>
 
-      <section className="py-12 md:py-20">
+      <section className="py-16 md:py-24">
 
-        <div className="container flex flex-col lg:flex-row gap-8 lg:gap-16">
+        <div className="container flex flex-col lg:flex-row gap-10 lg:gap-20">
           <nav className="lg:sticky lg:top-24 lg:self-start shrink-0 lg:w-56">
             <div className="relative flex lg:flex-col gap-1 overflow-x-auto lg:overflow-visible pb-2 lg:pb-0">
               <div className="hidden lg:block absolute left-0 top-0 bottom-0 w-px bg-border">
@@ -107,6 +113,7 @@ const MushroomProgram = () => {
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: -20 }}
                 transition={{ duration: 0.35, ease: "easeOut" }}
+                className={`rounded-xl ${sectionBg ? `${sectionBg} p-6 md:p-8 -m-2` : ""}`}
               >
                 <ActiveComponent />
               </motion.div>
