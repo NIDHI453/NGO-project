@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Green House Foundation NGO</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI;
+}
+
+body{
+background:#f4f7f9;
+}
+
+/* Navigation */
+
+nav{
+background:#0a6c74;
+color:white;
+padding:15px 60px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+nav h2{
+letter-spacing:1px;
+}
+
+nav ul{
+list-style:none;
+display:flex;
+gap:30px;
+}
+
+nav ul li{
+cursor:pointer;
+font-weight:500;
+}
+
+nav ul li:hover{
+color:#ffd000;
+}
+
+/* Hero Section */
+
+.hero{
+height:80vh;
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmeh5vXhXo-F_JrvTshQ-TH1oHB7jsBpeBNg&s");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+}
+
+.hero h1{
+font-size:55px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+width:60%;
+margin:auto;
+}
+
+.hero button{
+margin-top:30px;
+padding:12px 30px;
+border:none;
+background:#ffd000;
+font-size:18px;
+border-radius:5px;
+cursor:pointer;
+}
+
+.hero button:hover{
+background:#ffbb00;
+}
+
+/* About Section */
+
+.about{
+padding:80px 100px;
+text-align:center;
+}
+
+.about h2{
+font-size:36px;
+margin-bottom:20px;
+color:#0a6c74;
+}
+
+.about p{
+font-size:18px;
+line-height:1.6;
+}
+
+/* Services */
+
+.services{
+padding:80px;
+background:white;
+}
+
+.services h2{
+text-align:center;
+font-size:36px;
+margin-bottom:60px;
+color:#0a6c74;
+}
+
+.service-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:#f4f7f9;
+padding:30px;
+border-radius:10px;
+text-align:center;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.card h3{
+margin-bottom:15px;
+color:#0a6c74;
+}
+
+/* Impact */
+
+.impact{
+padding:80px;
+background:#0a6c74;
+color:white;
+text-align:center;
+}
+
+.impact-container{
+display:flex;
+justify-content:space-around;
+margin-top:40px;
+flex-wrap:wrap;
+}
+
+.impact-box{
+font-size:28px;
+margin:20px;
+}
+
+/* Donate */
+
+.donate{
+padding:80px;
+text-align:center;
+}
+
+.donate button{
+background:#0a6c74;
+color:white;
+border:none;
+padding:15px 35px;
+font-size:18px;
+border-radius:5px;
+cursor:pointer;
+}
+
+.donate button:hover{
+background:#084c52;
+}
+
+/* Footer */
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+</style>
+</head>
+
+
+<body>
+
+<!-- Navbar -->
+
+<nav>
+
+<h2>Green House Foundation</h2>
+
+<ul>
+<li>Home</li>
+<li>About</li>
+<li>Programs</li>
+<li>Gallery</li>
+<li>Donate</li>
+<li>Contact</li>
+</ul>
+
+</nav>
+
+<!-- Hero -->
+
+<section class="hero">
+
+<div>
+<h1>Changing Lives With Care</h1>
+
+<p>
+Supporting orphan children, caring for the elderly,
+and empowering communities through hydroponic
+and mushroom farming.
+</p>
+
+<button onclick="donate()">Donate Now</button>
+</div>
+
+</section>
+
+<!-- About -->
+
+<section class="about">
+
+<h2>About Our NGO</h2>
+
+<p>
+Green House Foundation is a non-profit organization dedicated to providing
+love and support to orphan children and elderly people. We also promote
+sustainable agriculture through hydroponic farming and mushroom
+cultivation to create self-sustainable communities and employment
+opportunities.
+</p>
+
+</section>
+
+
+<!-- Services -->
+
+<section class="services">
+
+<h2>Our Programs</h2>
+
+<div class="service-container">
+
+<div class="card">
+<h3>Orphanage Support</h3>
+<p>
+Providing shelter, education, healthcare, and a loving
+environment for orphan children.
+</p>
+</div>
+
+<div class="card">
+<h3>Old Age Home Care</h3>
+<p>
+Supporting elderly people with food, healthcare,
+and a comfortable living environment.
+</p>
+</div>
+
+<div class="card">
+<h3>Hydroponic Farming</h3>
+<p>
+Training communities to grow crops using modern
+soil-less hydroponic farming technology.
+</p>
+</div>
+
+<div class="card">
+<h3>Mushroom Farming</h3>
+<p>
+Encouraging sustainable agriculture and employment
+through mushroom cultivation projects.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- Impact -->
+
+<section class="impact">
+
+<h2>Our Impact</h2>
+
+<div class="impact-container">
+
+<div class="impact-box">
+<h3>120+</h3>
+<p>Children Supported</p>
+</div>
+
+<div class="impact-box">
+<h3>80+</h3>
+<p>Elderly People Cared</p>
+</div>
+
+<div class="impact-box">
+<h3>50+</h3>
+<p>Farmers Trained</p>
+</div>
+
+<div class="impact-box">
+<h3>20+</h3>
+<p>Hydroponic Units</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- Donate -->
+
+<section class="donate">
+
+<h2>Make a Difference Today</h2>
+<p>Your support can change someone's life.</p>
+
+<br>
+
+<button onclick="donate()">Donate Now</button>
+
+</section>
+
+
+<!-- Footer -->
+
+<footer>
+
+<p>© 2026 Hope Foundation NGO | All Rights Reserved</p>
+
+</footer>
+
+
+<script>
+
+function donate(){
+alert("Thank you for supporting our NGO!");
+}
+
+</script>
+
+
+</body>
+</html>
